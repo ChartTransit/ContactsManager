@@ -156,13 +156,13 @@
 //        if (KTSContactsManagerFieldUpdatedAt & fields){
 //            person[@"updatedAt"] = [self stringProperty:kABPersonModificationDateProperty fromContact:record];
 //        }
-		
-        // BirthDay
-        if (KTSContactsManagerFieldBirthday & fields){
-            person[@"birthday"] = [self stringProperty:kABPersonBirthdayProperty fromContact:record];
-        }
-        
-        //Image
+//		
+//        // BirthDay
+//        if (KTSContactsManagerFieldBirthday & fields){
+//            person[@"birthday"] = [self stringProperty:kABPersonBirthdayProperty fromContact:record];
+//        }
+//        
+//        //Image
 //        if (KTSContactsManagerFieldImage & fields){
 //            NSData *data = CFBridgingRelease(ABPersonCopyImageData(record));
 //            if (data){
