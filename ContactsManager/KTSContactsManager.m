@@ -163,13 +163,13 @@
         }
         
         //Image
-        if (KTSContactsManagerFieldImage & fields){
-            NSData *data = CFBridgingRelease(ABPersonCopyImageData(record));
-            if (data){
-                person[@"image"] = [UIImage imageWithData:data];
-            }            
-        }
-        
+//        if (KTSContactsManagerFieldImage & fields){
+//            NSData *data = CFBridgingRelease(ABPersonCopyImageData(record));
+//            if (data){
+//                person[@"image"] = [UIImage imageWithData:data];
+//            }            
+//        }
+		
         if (KTSContactsManagerFieldPhones & fields){
             // Phone(s)
             ABMultiValueRef phones = ABRecordCopyValue(record, kABPersonPhoneProperty);
