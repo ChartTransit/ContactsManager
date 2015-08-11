@@ -147,16 +147,16 @@
             person[@"note"] = [self stringProperty:kABPersonNoteProperty fromContact:record];
         }
         
-        // createdAt
-        if (KTSContactsManagerFieldCreatedAt & fields){
-            person[@"createdAt"] = [self dateProperty:kABPersonCreationDateProperty fromContact:record];
-        }
-        
-        // updatedAt
-        if (KTSContactsManagerFieldUpdatedAt & fields){
-            person[@"updatedAt"] = [self stringProperty:kABPersonModificationDateProperty fromContact:record];
-        }
-        
+//        // createdAt
+//        if (KTSContactsManagerFieldCreatedAt & fields){
+//            person[@"createdAt"] = [self dateProperty:kABPersonCreationDateProperty fromContact:record];
+//        }
+//        
+//        // updatedAt
+//        if (KTSContactsManagerFieldUpdatedAt & fields){
+//            person[@"updatedAt"] = [self stringProperty:kABPersonModificationDateProperty fromContact:record];
+//        }
+		
         // BirthDay
         if (KTSContactsManagerFieldBirthday & fields){
             person[@"birthday"] = [self stringProperty:kABPersonBirthdayProperty fromContact:record];
